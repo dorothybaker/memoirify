@@ -14,7 +14,7 @@ const PORT = process.env.PORT;
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ origin: "http://localhost:4173", credentials: true }));
+app.use(cors({ origin: "https://memoirify.netlify.app", credentials: true }));
 
 app.get("/", (req, res) => {
   res.send("This is the main route.");
